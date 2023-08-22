@@ -49,9 +49,7 @@ export class App extends Component {
               <Statistics good={good} neutral={neutral} bad={bad} total={total} positivePercentage={positivePercentage}/>
            </Section>
           }
-      </div>
-      
-   ) }  
-  
+      </div>      
+   )}    
 };
 

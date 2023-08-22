@@ -1,4 +1,5 @@
 import { EmergenceData } from "components/App.styled"
+import PropTypes from 'prop-types';
 
 export const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
   return (
@@ -12,4 +13,12 @@ export const Statistics = ({good, neutral, bad, total, positivePercentage}) => {
               </EmergenceData>
       </div>
   )
+  }
+
+  Statistics.prototype = {
+    good: PropTypes.number.isRequired,
+    neutral: PropTypes.number.isRequired,
+    bad: PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
+    positivePercentage: PropTypes.number.isRequired
   }
